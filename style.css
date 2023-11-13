@@ -1,3 +1,9 @@
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
 #num1 ,#equal{
     color: #fe4a49;
 }
@@ -9,4 +15,64 @@
 }
 #result{
     color: #808080;
+}
+
+body{
+    font-family: 'Luckiest Guy';
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #fe4a49;
+}
+.container h1{
+    margin: 20px 0 20px 0;
+    color: #f0f8ff;
+    width: 300px;
+}
+.container ul{
+    margin-top: 25px;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.container li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+.wrapper h1{
+    display: inline-block;
+    font-size: 100px;
+}
+.answer h1{
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 120px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.equation{
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 60vw;
+}
+.equation h1{
+    font-size: 120px;
+    margin: 30px;
+}
+.answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    margin-top: 20px;
+    margin-right: 50px;
+    flex-wrap: wrap;
 }
