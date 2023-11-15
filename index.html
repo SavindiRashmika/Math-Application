@@ -8,37 +8,125 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<audio>
-
-</audio>
 
 <header>
-    <div class="container">
+    <div class="container" id="container">
         <h1>MATHS 4 KIDS</h1>
         <ul>
-            <li class="current"><a href="index.html">Add</a></li>
-            <li><a href="subtract.html">Subtract</a></li>
-            <li><a href="multiply.html">Multiply</a></li>
-            <li><a href="divide.html">Divide</a></li>
+            <li id="current"><a href="#">Add</a></li>
+            <li id="current1"><a href="#">Subtract</a></li>
+            <li id="current2"><a href="#">Multiply</a></li>
+            <li id="current3"><a href="#">Divide</a></li>
         </ul>
     </div>
 </header>
 
-<div class="wrapper">
-    <div class="equation">
-        <h1 id="num1">1</h1>
-        <h1 id="add">+</h1>
-        <h1 id="num2">1</h1>
-        <h1 id="equal">=</h1>
-        <h1 id="result">?</h1>
+<!--dashboard-->
+<section id="dashboard">
+    <div>
+        <h1>MATHS  4  KIDS</h1>
+        <div id="start_button">Get Start</div>
     </div>
+</section>
 
-    <div class="answer">
-        <h1 id="option1" >1</h1>
-        <h1 id="option2" >2</h1>
-        <h1 id="option3" >3</h1>
+<!--add-->
+<section id="addition">
+    <audio id="myAudio">
+    <source>
+    </audio>
+
+    <div class="wrapper">
+        <div class="equation">
+            <h1 id="num1">1</h1>
+            <h1 id="add">+</h1>
+            <h1 id="num2">1</h1>
+            <h1 id="equal">=</h1>
+            <h1 id="result">?</h1>
+        </div>
+
+        <div class="answer">
+            <h1 class="option1" id="option1" >1</h1>
+            <h1 class="option2" id="option2" >2</h1>
+            <h1 class="option3" id="option3" >3</h1>
+        </div>
     </div>
-</div>
-<script src="script.js"></script>
+</section>
+
+<!--Subtract-->
+<section id="subtraction">
+    <audio>
+        <source>
+    </audio>
+
+
+    <div class="wrapper">
+        <div class="equation">
+            <h1 id="sub_num1">1</h1>
+            <h1 id="subtract">-</h1>
+            <h1 id="sub_num2">1</h1>
+            <h1 id="sub_equal">=</h1>
+            <h1 id="sub_result">?</h1>
+        </div>
+
+        <div class="answer">
+            <h1 class="option1" id="sub_option1" >1</h1>
+            <h1 class="option2" id="sub_option2" >2</h1>
+            <h1 class="option3" id="sub_option3" >3</h1>
+        </div>
+    </div>
+</section>
+
+<!--Multiply-->
+<section id="multiply">
+    <audio>
+        <source>
+    </audio>
+
+
+    <div class="wrapper">
+        <div class="equation">
+            <h1 id="m_num1">1</h1>
+            <h1 id="multiplyS">X</h1>
+            <h1 id="m_num2">1</h1>
+            <h1 id="m_equal">=</h1>
+            <h1 id="m_result">?</h1>
+        </div>
+
+        <div class="answer">
+            <h1 class="option1" id="m_option1" >1</h1>
+            <h1 class="option2" id="m_option2" >2</h1>
+            <h1 class="option3" id="m_option3" >3</h1>
+        </div>
+    </div>
+</section>
+
+<!--Divide-->
+<section id="divide">
+    <audio>
+        <source>
+    </audio>
+
+    <div class="wrapper">
+        <div class="equation">
+            <h1 id="d_num1">1</h1>
+            <h1 id="divideS">%</h1>
+            <h1 id="d_num2">1</h1>
+            <h1 id="d_equal">=</h1>
+            <h1 id="d_result">?</h1>
+        </div>
+
+        <div class="answer">
+            <h1 class="option1" id="d_option1" >1</h1>
+            <h1 class="option2" id="d_option2" >2</h1>
+            <h1 class="option3" id="d_option3" >3</h1>
+        </div>
+    </div>
+</section>
+
+<script src="js/dashboard.js"></script>
+<script src="js/add.js"></script>
+<script src="js/subtract.js"></script>
+<script src="js/multiply.js"></script>
+<script src="js/divide.js"></script>
 </body>
 </html>

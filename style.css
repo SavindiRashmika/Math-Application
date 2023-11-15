@@ -4,16 +4,46 @@
     margin: 0;
 
 }
-#num1 ,#equal{
+#dashboard{
+    height: 90vh;
+    background: url("assets/dashboard.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: unset;
+}
+#dashboard h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    text-space: 50px;
+}
+#start_button{
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+    background: darkcyan;
+    text-align: center;
+    padding-top: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#start_button:hover{
+    color: #000000;
+    background-color: #f0f8ff;
+    border: 1px solid #2ab7ac;
+}
+#num1 ,#equal,#sub_num1,#sub_equal,#m_equal,#m_num1,#d_equal,#d_num1{
     color: #fe4a49;
 }
-#num2{
-    color: #fed766;
+#num2,#sub_num2,#m_num2,#d_num2{
+    color: #E48586;
 }
-#add{
+#add,#subtract,#multiplyS,#divideS{
     color: #2ab7ac;
 }
-#result{
+#result,#sub_result,#d_result,#m_result{
     color: #808080;
 }
 
@@ -24,7 +54,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background: #fe4a49;
+    background: #3C486B;
 }
 .container h1{
     margin: 20px 0 20px 0;
@@ -41,7 +71,17 @@ body{
 .container li a{
     font-size: 20px;
     text-decoration: none;
-    color: aliceblue;
+    color: #f0f8ff;
+}
+.container li a:hover{
+    text-decoration: underline;
+    color: #f0f8ff;
+}
+.current a:after{
+    content: '-';
+    background: #f0f8ff;
+    font-size: 2px;
+    display: block;
 }
 .wrapper h1{
     display: inline-block;
@@ -51,7 +91,6 @@ body{
     width: 250px;
     height: 150px;
     text-align: center;
-    border: 2px solid black;
     font-size: 120px;
 }
 .wrapper{
@@ -62,7 +101,7 @@ body{
     margin-top: 20px;
     margin-left: 40px;
     padding-top: 130px;
-    background: burlywood;
+    background: #ECF8F9;
     text-align: center;
     width: 70vw;
 }
@@ -78,4 +117,29 @@ body{
     margin-top: 20px;
     margin-right: 50px;
     flex-wrap: wrap;
+}
+.option1{
+    color: aliceblue;
+    background: #fe4a49;
+}
+.option1:hover{
+    color: #fe4a49;
+    background: #ffffff;
+}
+
+.option2{
+    color: aliceblue;
+    background: #2ab7ac;
+}
+.option2:hover{
+    color: #2ab7ac;
+    background: #ffffff;
+}
+.option3{
+    color: aliceblue;
+    background: #E48586;
+}
+.option3:hover{
+    color: #E48586;
+    background: #ffffff;
 }
