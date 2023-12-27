@@ -11,12 +11,12 @@
     background-position: center;
     background-size: unset;
 }
-#dashboard h1{
-    font-size: 50px;
-    text-align: center;
-    margin-top: 50px;
-    text-space: 50px;
-}
+/*#dashboard h1{*/
+/*    font-size: 50px;*/
+/*    text-align: center;*/
+/*    margin-top: 50px;*/
+/*    text-space: 50px;*/
+/*}*/
 #start_button{
     width: 200px;
     height: 40px;
@@ -61,19 +61,19 @@ body{
     color: #f0f8ff;
     width: 300px;
 }
-.container ul{
+.container .list{
     margin-top: 25px;
     width: 600px;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
 }
-.container li a{
+.list li a{
     font-size: 20px;
     text-decoration: none;
     color: #f0f8ff;
 }
-.container li a:hover{
+.list li a:hover{
     text-decoration: underline;
     color: #f0f8ff;
 }
@@ -97,7 +97,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.equation{
+.background{
     margin-top: 20px;
     margin-left: 40px;
     padding-top: 130px;
@@ -105,7 +105,7 @@ body{
     text-align: center;
     width: 70vw;
 }
-.equation h1{
+.background h1{
     font-size: 120px;
     margin: 30px;
 }
