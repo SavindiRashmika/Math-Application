@@ -4,7 +4,7 @@ const m_option2 = document.getElementById("m_option2");
 const m_option3 = document.getElementById("m_option3");
 var m_answer = 0;
 
-function multiply(){
+function Multiplication(){
     var m_num1 = Math.floor(Math.random() * 13);
     var m_num2 = Math.floor(Math.random() * 13);
     var m_dummyNumber1 = Math.floor(Math.random() * 13);
@@ -30,7 +30,7 @@ function multiply(){
 
 m_option1.addEventListener("click", function (){
     if (m_option1.innerHTML == m_answer){
-        multiply();
+        Multiplication();
     }else {
         audio.play();
     }
@@ -38,7 +38,7 @@ m_option1.addEventListener("click", function (){
 
 m_option2.addEventListener("click", function (){
     if (m_option2.innerHTML == m_answer){
-        multiply();
+        Multiplication();
     }else {
         audio.play();
     }
@@ -46,10 +46,10 @@ m_option2.addEventListener("click", function (){
 
 m_option3.addEventListener("click", function (){
     if (m_option3.innerHTML == m_answer){
-        multiply();
+        Multiplication();
     }else {
         audio.play();
     }
 });
 
-multiply();
+Multiplication();
