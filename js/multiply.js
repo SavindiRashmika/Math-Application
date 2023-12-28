@@ -2,8 +2,8 @@
 const m_option1 = document.getElementById("m_option1");
 const m_option2 = document.getElementById("m_option2");
 const m_option3 = document.getElementById("m_option3");
-const audio = document.getElementById("m_myAudio");
-const audio_2 = document.getElementById("m_myAudio_2")
+const m_audio = document.getElementById("m_myAudio");
+const m_audio_2 = document.getElementById("m_myAudio_2")
 var m_answer = 0;
 
 function Multiplication(){
@@ -33,27 +33,27 @@ function Multiplication(){
 m_option1.addEventListener("click", function (){
     if (m_option1.innerHTML == m_answer){
         Multiplication();
-        audio_2.play();
+        m_audio_2.play();
     }else {
-        audio.play();
+        m_audio.play();
     }
 });
 
 m_option2.addEventListener("click", function (){
     if (m_option2.innerHTML == m_answer){
         Multiplication();
-        audio_2.play();
+        m_audio_2.play();
     }else {
-        audio.play();
+        m_audio.play();
     }
 });
 
 m_option3.addEventListener("click", function (){
     if (m_option3.innerHTML == m_answer){
         Multiplication();
-        audio_2.play();
+        m_audio_2.play();
     }else {
-        audio.play();
+        m_audio.play();
     }
 });
 

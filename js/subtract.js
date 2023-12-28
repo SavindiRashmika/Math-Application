@@ -2,8 +2,8 @@
 const sub_option1 = document.getElementById("sub_option1");
 const sub_option2 = document.getElementById("sub_option2");
 const sub_option3 = document.getElementById("sub_option3");
-const audio = document.getElementById("s_myAudio");
-const audio_2 = document.getElementById("s_myAudio_2")
+const s_audio = document.getElementById("s_myAudio");
+const s_audio_2 = document.getElementById("s_myAudio_2")
 var sub_answer = 0;
 
 function subtraction(){
@@ -33,27 +33,27 @@ function subtraction(){
 sub_option1.addEventListener("click", function (){
     if (sub_option1.innerHTML == sub_answer){
         subtraction();
-        audio_2.play();
+        s_audio_2.play();
     }else {
-        audio.play();
+        s_audio.play();
     }
 });
 
 sub_option2.addEventListener("click", function (){
     if (sub_option2.innerHTML == sub_answer){
         subtraction();
-        audio_2.play();
+        s_audio_2.play();
     }else {
-        audio.play();
+        s_audio.play();
     }
 });
 
 sub_option3.addEventListener("click", function (){
     if (sub_option3.innerHTML == sub_answer){
         subtraction();
-        audio_2.play();
+        s_audio_2.play();
     }else {
-        audio.play();
+        s_audio.play();
     }
 });
 

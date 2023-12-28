@@ -3,8 +3,8 @@
 const d_option1 = document.getElementById("d_option1");
 const d_option2 = document.getElementById("d_option2");
 const d_option3 = document.getElementById("d_option3");
-const audio = document.getElementById("d_myAudio");
-const audio_2 = document.getElementById("d_myAudio_2")
+const d_audio = document.getElementById("d_myAudio");
+const d_audio_2 = document.getElementById("d_myAudio_2")
 var d_answer = 0;
 
 function Division(){
@@ -34,27 +34,27 @@ function Division(){
 d_option1.addEventListener("click", function (){
     if (parseFloat(d_option1.innerHTML) == d_answer){
         Division();
-        audio_2.play();
+        d_audio_2.play();
     }else {
-        audio.play();
+        d_audio.play();
     }
 });
 
 d_option2.addEventListener("click", function (){
     if (parseFloat(d_option2.innerHTML) == d_answer){
         Division();
-        audio_2.play();
+        d_audio_2.play();
     }else {
-        audio.play();
+        d_audio.play();
     }
 });
 
 d_option3.addEventListener("click", function (){
     if (parseFloat(d_option3.innerHTML) == d_answer){
         Division();
-        audio_2.play();
+        d_audio_2.play();
     }else {
-        audio.play();
+        d_audio.play();
     }
 });
 
