@@ -2,7 +2,8 @@
 const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");
 const option3 = document.getElementById("option3");
-const audio = document.getElementById("myAudio")
+const audio = document.getElementById("myAudio");
+const audio_2 = document.getElementById("myAudio_2")
 var answer = 0;
 
 function equation(){
@@ -34,6 +35,7 @@ function equation(){
 option1.addEventListener("click" , function (){
     if (option1.innerHTML == answer){
         equation();
+        audio_2.play();
     }else {
         audio.play();
     }
@@ -42,6 +44,7 @@ option1.addEventListener("click" , function (){
 option2.addEventListener("click" , function (){
     if (option2.innerHTML == answer){
         equation();
+        audio_2.play();
     }else {
         audio.play();
     }
@@ -50,6 +53,7 @@ option2.addEventListener("click" , function (){
 option3.addEventListener("click" , function (){
     if (option3.innerHTML == answer){
         equation();
+        audio_2.play();
     }else {
         audio.play();
     }
